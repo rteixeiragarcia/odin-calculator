@@ -136,42 +136,33 @@ function div(num1, num2) {
     return result;
 }
 
-function updateNumber1(value) {
-    return numberString1 += value;
-}
-
-function updateNumber2(value) {
-    return numberString2 += value;
+function updateNumber(value) {
+    if (operator === "") return numberString1 += value;
+    else return numberString2 += value;
 }
 
 
 
 zero.addEventListener("click", function () {
-    if (operator === "") updateNumber1("0");
-    else updateNumber2("0");
+    updateNumber("0");
 });
 
 one.addEventListener("click", function () {
-    if (operator === "") updateNumber1("1");
-    else updateNumber2("1");
+    updateNumber("0");
 });
 
 two.addEventListener("click", function () {
-    if (operator === "") updateNumber1("2");
-    else updateNumber2("2");
+    updateNumber("0");
 });
 
 three.addEventListener("click", function () {
-    if (operator === "") updateNumber1("3");
-    else updateNumber2("3");
+    updateNumber("0");
 });
 
 four.addEventListener("click", function () {
-    if (operator === "") updateNumber1("4");
-    else updateNumber2("4");
+    updateNumber("0");
 });
 
 five.addEventListener("click", function () {
-    if (operator === "") updateNumber1("5");
-    else updateNumber2("5");
+    updateNumber("0");
 });
