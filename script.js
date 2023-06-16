@@ -54,15 +54,25 @@ divide.addEventListener("click", function () {
         eraseLast();
         storageOperation("/");
     } else storageOperation("/");
-
-    console.log(operation);
 });
 
 multiply.addEventListener("click", function () {    
     if (operation[operation.length-1] === "/" || operation[operation.length-1] === "*" || operation[operation.length-1] === "+" || operation[operation.length-1] === "-") {
         eraseLast();
         storageOperation("*");
-    } else storageOperation("/");
+    } else storageOperation("*");
+});
 
-    console.log(operation);
+plus.addEventListener("click", function () {    
+    if (operation[operation.length-1] === "/" || operation[operation.length-1] === "*" || operation[operation.length-1] === "+" || operation[operation.length-1] === "-") {
+        eraseLast();
+        storageOperation("+");
+    } else storageOperation("+");
+});
+
+minus.addEventListener("click", function () {    
+    if (operation[operation.length-1] === "/" || operation[operation.length-1] === "*" || operation[operation.length-1] === "+" || operation[operation.length-1] === "-") {
+        eraseLast();
+        storageOperation("-");
+    } else storageOperation("-");
 });
