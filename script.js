@@ -23,8 +23,8 @@ const seven = document.getElementById("seven");
 const eight = document.getElementById("eight");
 const nine = document.getElementById("nine");
 
-let numberString1 = "0";
-let numberString2 = "0";
+let numberString1 = "";
+let numberString2 = "";
 
 let operator = "";
 
@@ -32,18 +32,26 @@ function displayResult(result) {
     resultText.textContent = result;
 }
 
-function plus(num1, num2) {
+function add(num1, num2) {
     return Number(num1) + Number(num2);
 }
 
-function minus(num1, num2) {
+function sub(num1, num2) {
     return Number(num1) - Number(num2);
 }
 
-function multiply(num1, num2) {
+function multi(num1, num2) {
     return Number(num1) * Number(num2);
 }
 
-function divide(num1, num2) {
+function div(num1, num2) {
     return Number(num1) / Number(num2);
+}
+
+function updateNumber1(value) {
+    return numberString1 += value;
+}
+
+function updateNumber2(value) {
+    return numberString2 += value;
 }
