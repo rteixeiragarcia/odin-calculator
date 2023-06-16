@@ -148,21 +148,37 @@ zero.addEventListener("click", function () {
 });
 
 one.addEventListener("click", function () {
-    updateNumber("0");
+    updateNumber("1");
 });
 
 two.addEventListener("click", function () {
-    updateNumber("0");
+    updateNumber("2");
 });
 
 three.addEventListener("click", function () {
-    updateNumber("0");
+    updateNumber("3");
 });
 
 four.addEventListener("click", function () {
-    updateNumber("0");
+    updateNumber("4");
 });
 
 five.addEventListener("click", function () {
-    updateNumber("0");
+    updateNumber("5");
+});
+
+six.addEventListener("click", function () {
+    updateNumber("6");
+});
+
+seven.addEventListener("click", function () {
+    updateNumber("7");
+});
+
+eight.addEventListener("click", function () {
+    updateNumber("8");
+});
+
+nine.addEventListener("click", function () {
+    updateNumber("9");
 });
