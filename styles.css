@@ -41,4 +41,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 80vh;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 400px;
+    border: 0.5rem solid #60007F;
+    border-radius: 2rem;
+    box-shadow: 
+    0 0 .2rem #560073,
+    0 0 .2rem #560073,
+    0 0 2rem #560073,
+    0 0 0.8rem #560073,
+    0 0 2.8rem #560073,
+    inset 0 0 1.3rem #560073;
 }
