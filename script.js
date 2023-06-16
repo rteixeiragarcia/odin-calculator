@@ -26,6 +26,8 @@ const nine = document.getElementById("nine");
 let numberString1 = "";
 let numberString2 = "";
 
+let operator = "";
+
 let number1 = 0;
 let number2 = 0;
 
