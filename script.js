@@ -171,6 +171,10 @@ function updateNumber(value) {
     else return numberString2 += value;
 }
 
+function updateOperator(value) {
+    operator = value;
+}
+
 
 
 zero.addEventListener("click", function () {
