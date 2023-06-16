@@ -130,6 +130,42 @@ function div(num1, num2) {
     return result;
 }
 
+function equal() {
+    if (numberString2 === "") {
+        switch(operator) {
+            case "+":
+                add(numberString1, numberString1);
+                break;
+            case "-":
+                sub(numberString1, numberString1);
+                break;
+            case "*":
+                multi(numberString1, numberString1);
+                break;
+            case "/":
+                div(numberString1, numberString1);
+                break;
+        }
+    } else {
+        switch(operator) {
+            case "+":
+                add(numberString1, numberString2);
+                break;
+            case "-":
+                sub(numberString1, numberString2);
+                break;
+            case "*":
+                multi(numberString1, numberString2);
+                break;
+            case "/":
+                div(numberString1, numberString2);
+                break;
+        }
+    }
+
+    return result;
+}
+
 function updateNumber(value) {
     if (operator === "") return numberString1 += value;
     else return numberString2 += value;
