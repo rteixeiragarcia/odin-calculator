@@ -28,13 +28,13 @@ let numberString2 = "";
 
 let operator = "";
 
+let result = 0;
+
 function displayResult(result) {
     resultText.textContent = result;
 }
 
 function add(num1, num2) {
-    let result = 0;
-
     switch(operator) {
         case "+":
             result = +(Number(num1) + Number(num2)).toFixed(2);
@@ -59,8 +59,6 @@ function add(num1, num2) {
 }
 
 function sub(num1, num2) {
-    let result = 0;
-
     switch(operator) {
         case "+":
             result = +(Number(num1) + Number(num2)).toFixed(2);
@@ -85,8 +83,6 @@ function sub(num1, num2) {
 }
 
 function multi(num1, num2) {
-    let result = 0;
-
     switch(operator) {
         case "+":
             result = +(Number(num1) + Number(num2)).toFixed(2);
@@ -111,8 +107,6 @@ function multi(num1, num2) {
 }
 
 function div(num1, num2) {
-    let result = 0;
-
     switch(operator) {
         case "+":
             result = +(Number(num1) + Number(num2)).toFixed(2);
