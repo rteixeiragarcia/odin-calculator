@@ -33,41 +33,105 @@ function displayResult(result) {
 }
 
 function add(num1, num2) {
-    if (numberString2 === "") {
-        
+    let result = 0;
+
+    switch(operator) {
+        case "+":
+            result = +(Number(num1) + Number(num2)).toFixed(2);
+            break;
+        case "-":
+            result = +(Number(num1) - Number(num2)).toFixed(2);
+            break;
+        case "*":
+            result = +(Number(num1) * Number(num2)).toFixed(2);
+            break;
+        case "/":
+            result = +(Number(num1) / Number(num2)).toFixed(2);
+            break;
     }
-    
-    let result = +(Number(num1) + Number(num2)).toFixed(2);
 
     numberString1 = result.toString();
     numberString2 = "";
+
+    operator = "+";
 
     return result;
 }
 
 function sub(num1, num2) {
-    let result = +(Number(num1) - Number(num2)).toFixed(2);
+    let result = 0;
+
+    switch(operator) {
+        case "+":
+            result = +(Number(num1) + Number(num2)).toFixed(2);
+            break;
+        case "-":
+            result = +(Number(num1) - Number(num2)).toFixed(2);
+            break;
+        case "*":
+            result = +(Number(num1) * Number(num2)).toFixed(2);
+            break;
+        case "/":
+            result = +(Number(num1) / Number(num2)).toFixed(2);
+            break;
+    }
 
     numberString1 = result.toString();
     numberString2 = "";
+
+    operator = "-";
 
     return result;
 }
 
 function multi(num1, num2) {
-    let result = +(Number(num1) * Number(num2)).toFixed(2);
+    let result = 0;
+
+    switch(operator) {
+        case "+":
+            result = +(Number(num1) + Number(num2)).toFixed(2);
+            break;
+        case "-":
+            result = +(Number(num1) - Number(num2)).toFixed(2);
+            break;
+        case "*":
+            result = +(Number(num1) * Number(num2)).toFixed(2);
+            break;
+        case "/":
+            result = +(Number(num1) / Number(num2)).toFixed(2);
+            break;
+    }
 
     numberString1 = result.toString();
     numberString2 = "";
+
+    operator = "*";
 
     return result;
 }
 
 function div(num1, num2) {
-    let result = +(Number(num1) / Number(num2)).toFixed(2);
+    let result = 0;
+
+    switch(operator) {
+        case "+":
+            result = +(Number(num1) + Number(num2)).toFixed(2);
+            break;
+        case "-":
+            result = +(Number(num1) - Number(num2)).toFixed(2);
+            break;
+        case "*":
+            result = +(Number(num1) * Number(num2)).toFixed(2);
+            break;
+        case "/":
+            result = +(Number(num1) / Number(num2)).toFixed(2);
+            break;
+    }
 
     numberString1 = result.toString();
     numberString2 = "";
+
+    operator = "/";
 
     return result;
 }
