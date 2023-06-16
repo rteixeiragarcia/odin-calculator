@@ -23,6 +23,18 @@ const seven = document.getElementById("seven");
 const eight = document.getElementById("eight");
 const nine = document.getElementById("nine");
 
+let operation = [];
+
 function displayResult(result) {
     resultText.textContent = result;
 }
+
+function storageOperation(value) {
+    operation.push(value);
+}
+
+open.addEventListener("click", function () {
+    storageOperation("(");
+    open.disabled = true;
+    close.disabled = false;
+});
