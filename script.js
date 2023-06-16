@@ -23,7 +23,11 @@ const seven = document.getElementById("seven");
 const eight = document.getElementById("eight");
 const nine = document.getElementById("nine");
 
-let operation = [];
+let numberString1 = "";
+let numberString2 = "";
+
+let number1 = 0;
+let number2 = 0;
 
 function displayResult(result) {
     resultText.textContent = result;
