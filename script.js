@@ -23,13 +23,10 @@ const seven = document.getElementById("seven");
 const eight = document.getElementById("eight");
 const nine = document.getElementById("nine");
 
-let numberString1 = "";
-let numberString2 = "";
+let numberString1 = "0";
+let numberString2 = "0";
 
 let operator = "";
-
-let number1 = 0;
-let number2 = 0;
 
 function displayResult(result) {
     resultText.textContent = result;
@@ -43,10 +40,10 @@ function minus(num1, num2) {
     return Number(num1) - Number(num2);
 }
 
-function mult(num1, num2) {
+function multiply(num1, num2) {
     return Number(num1) * Number(num2);
 }
 
-function duv(num1, num2) {
+function divide(num1, num2) {
     return Number(num1) / Number(num2);
 }
