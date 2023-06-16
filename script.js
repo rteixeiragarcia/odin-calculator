@@ -35,97 +35,37 @@ function displayResult(result) {
 }
 
 function add(num1, num2) {
-    switch(operator) {
-        case "+":
-            result = +(Number(num1) + Number(num2)).toFixed(2);
-            break;
-        case "-":
-            result = +(Number(num1) - Number(num2)).toFixed(2);
-            break;
-        case "*":
-            result = +(Number(num1) * Number(num2)).toFixed(2);
-            break;
-        case "/":
-            result = +(Number(num1) / Number(num2)).toFixed(2);
-            break;
-    }
-
+    result = +(Number(num1) + Number(num2)).toFixed(2);
+        
     numberString1 = result.toString();
     numberString2 = "";
-
-    operator = "+";
 
     return result;
 }
 
 function sub(num1, num2) {
-    switch(operator) {
-        case "+":
-            result = +(Number(num1) + Number(num2)).toFixed(2);
-            break;
-        case "-":
-            result = +(Number(num1) - Number(num2)).toFixed(2);
-            break;
-        case "*":
-            result = +(Number(num1) * Number(num2)).toFixed(2);
-            break;
-        case "/":
-            result = +(Number(num1) / Number(num2)).toFixed(2);
-            break;
-    }
-
+    result = +(Number(num1) - Number(num2)).toFixed(2);
+        
     numberString1 = result.toString();
     numberString2 = "";
-
-    operator = "-";
 
     return result;
 }
 
 function multi(num1, num2) {
-    switch(operator) {
-        case "+":
-            result = +(Number(num1) + Number(num2)).toFixed(2);
-            break;
-        case "-":
-            result = +(Number(num1) - Number(num2)).toFixed(2);
-            break;
-        case "*":
-            result = +(Number(num1) * Number(num2)).toFixed(2);
-            break;
-        case "/":
-            result = +(Number(num1) / Number(num2)).toFixed(2);
-            break;
-    }
-
+    result = +(Number(num1) * Number(num2)).toFixed(2);
+        
     numberString1 = result.toString();
     numberString2 = "";
-
-    operator = "*";
 
     return result;
 }
 
 function div(num1, num2) {
-    switch(operator) {
-        case "+":
-            result = +(Number(num1) + Number(num2)).toFixed(2);
-            break;
-        case "-":
-            result = +(Number(num1) - Number(num2)).toFixed(2);
-            break;
-        case "*":
-            result = +(Number(num1) * Number(num2)).toFixed(2);
-            break;
-        case "/":
-            result = +(Number(num1) / Number(num2)).toFixed(2);
-            break;
-    }
-
+    result = +(Number(num1) / Number(num2)).toFixed(2);
+        
     numberString1 = result.toString();
     numberString2 = "";
-
-    operator = "/";
 
     return result;
 }
