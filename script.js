@@ -53,7 +53,16 @@ divide.addEventListener("click", function () {
     if (operation[operation.length-1] === "/" || operation[operation.length-1] === "*" || operation[operation.length-1] === "+" || operation[operation.length-1] === "-") {
         eraseLast();
         storageOperation("/");
-    }
+    } else storageOperation("/");
 
-    storageOperation("/");
+    console.log(operation);
+});
+
+multiply.addEventListener("click", function () {    
+    if (operation[operation.length-1] === "/" || operation[operation.length-1] === "*" || operation[operation.length-1] === "+" || operation[operation.length-1] === "-") {
+        eraseLast();
+        storageOperation("*");
+    } else storageOperation("/");
+
+    console.log(operation);
 });
