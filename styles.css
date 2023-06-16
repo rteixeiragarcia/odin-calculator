@@ -54,10 +54,20 @@
 #display {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-end;
     height: 30vh;
     border-radius: 1.4rem;
     border: 0.5rem solid #60007F;
     background-color: #BF0A5D;
+}
+
+#result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;;
+    height: 15vh;
+    border: 2px solid black;
+    text-align: center;
 }
