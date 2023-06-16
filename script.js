@@ -166,6 +166,25 @@ function equal() {
     return result;
 }
 
+function operation() {
+    switch(operator) {
+        case "+":
+            add(numberString1, numberString2);
+            break;
+        case "-":
+            sub(numberString1, numberString2);
+            break;
+        case "*":
+            multi(numberString1, numberString2);
+            break;
+        case "/":
+            div(numberString1, numberString2);
+            break;
+    }
+
+    return result;
+}
+
 function updateNumber(value) {
     if (operator === "") return numberString1 += value;
     else return numberString2 += value;
