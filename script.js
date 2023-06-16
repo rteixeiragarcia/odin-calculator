@@ -202,8 +202,6 @@ function updateNumber(value) {
     else return numberString2 += value;
 }
 
-
-
 zero.addEventListener("click", function () {
     updateNumber("0");
 });
@@ -247,3 +245,9 @@ nine.addEventListener("click", function () {
 plus.addEventListener("click", add);
 
 minus.addEventListener("click", sub);
+
+multiply.addEventListener("click", multi);
+
+divide.addEventListener("click", div);
+
+equal.addEventListener("click", total);
