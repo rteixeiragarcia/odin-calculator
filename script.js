@@ -33,6 +33,10 @@ function displayResult(result) {
 }
 
 function add(num1, num2) {
+    if (numberString2 === "") {
+        
+    }
+    
     let result = +(Number(num1) + Number(num2)).toFixed(2);
 
     numberString1 = result.toString();
@@ -91,4 +95,19 @@ one.addEventListener("click", function () {
 two.addEventListener("click", function () {
     if (operator === "") updateNumber1("2");
     else updateNumber2("2");
+});
+
+three.addEventListener("click", function () {
+    if (operator === "") updateNumber1("3");
+    else updateNumber2("3");
+});
+
+four.addEventListener("click", function () {
+    if (operator === "") updateNumber1("4");
+    else updateNumber2("4");
+});
+
+five.addEventListener("click", function () {
+    if (operator === "") updateNumber1("5");
+    else updateNumber2("5");
 });
