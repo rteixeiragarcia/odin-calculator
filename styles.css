@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+body {
+    font-family: 'Rajdhani', sans-serif;
+}
+
 #header {
     display: flex;
     height: 20vh;
@@ -16,7 +20,6 @@
     padding: 0.4em;
     border-radius: 2rem;
     font-size: 48px;
-    font-family: 'Rajdhani', sans-serif;
     color: #8700B3;
     box-shadow: 
     0 0 .2rem #8700B3,
@@ -60,6 +63,7 @@
     border-radius: 1.4rem;
     border: 0.5rem solid #60007F;
     background-color: #BF0A5D;
+    padding-right: 10px;
 }
 
 #result {
@@ -68,6 +72,18 @@
     justify-content: center;
     align-items: center;;
     height: 15vh;
-    border: 2px solid black;
     text-align: center;
+}
+
+#result-text {
+    font-weight: bold;
+    font-size: 72px;
+    color: #CCBA14;
+}
+
+#line-1-display, #line-2-display, #line-3-display {
+    height: 5vh;
+    font-size: 24px;
+    color: #CCBA14;
+    font-weight: bold;
 }
