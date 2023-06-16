@@ -22,3 +22,7 @@ const six = document.getElementById("six");
 const seven = document.getElementById("seven");
 const eight = document.getElementById("eight");
 const nine = document.getElementById("nine");
+
+function displayResult(result) {
+    resultText.textContent = result;
+}
