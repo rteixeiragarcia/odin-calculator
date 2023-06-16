@@ -87,3 +87,13 @@ body {
     color: #CCBA14;
     font-weight: bold;
 }
+
+#keypad {
+    display: flex;
+    flex-wrap: wrap;
+    height: 30vh;
+    border-radius: 1.4rem;
+    border: 0.5rem solid #60007F;
+    background-color: #CC3314;
+    padding-right: 10px;
+}
