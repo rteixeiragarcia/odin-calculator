@@ -16,18 +16,18 @@ body {
 }
 
 #title {
-    border: 0.5rem solid #8700B3;
+    border: 0.5rem solid #00B5D9;
     padding: 0.4em;
     border-radius: 2rem;
     font-size: 48px;
-    color: #8700B3;
+    color: #00B5D9;
     box-shadow: 
-    0 0 .2rem #8700B3,
-    0 0 .2rem #8700B3,
-    0 0 2rem #8700B3,
-    0 0 0.8rem #8700B3,
-    0 0 2.8rem #8700B3,
-    inset 0 0 1.3rem #8700B3;
+    0 0 .2rem #00B5D9,
+    0 0 .2rem #00B5D9,
+    0 0 2rem #00B5D9,
+    0 0 0.8rem #00B5D9,
+    0 0 2.8rem #00B5D9,
+    inset 0 0 1.3rem #00B5D9;
 }
 
 #main {
@@ -43,15 +43,15 @@ body {
     flex-direction: column;
     height: 60vh;
     width: 400px;
-    border: 0.5rem solid #60007F;
+    border: 0.5rem solid #004A59;
     border-radius: 2rem;
     box-shadow: 
-    0 0 .2rem #60007F,
-    0 0 .2rem #60007F,
-    0 0 2rem #60007F,
-    0 0 0.8rem #60007F,
-    0 0 2.8rem #60007F,
-    inset 0 0 1.3rem #60007F;
+    0 0 .2rem #004A59,
+    0 0 .2rem #004A59,
+    0 0 2rem #004A59,
+    0 0 0.8rem #004A59,
+    0 0 2.8rem #004A59,
+    inset 0 0 1.3rem #004A59;
 }
 
 #display {
@@ -61,8 +61,8 @@ body {
     align-items: flex-end;
     height: 30vh;
     border-radius: 1.4rem;
-    border: 0.5rem solid #60007F;
-    background-color: #BF0A5D;
+    border: 0.5rem solid #004A59;
+    background-color: #1B4F59;
     padding-right: 10px;
 }
 
@@ -78,22 +78,35 @@ body {
 #result-text {
     font-weight: bold;
     font-size: 72px;
-    color: #CCBA14;
+    color: #ffffff;
 }
 
 #line-1-display, #line-2-display, #line-3-display {
     height: 5vh;
     font-size: 24px;
-    color: #CCBA14;
+    color: #ffffff;
     font-weight: bold;
 }
 
 #keypad {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     height: 30vh;
     border-radius: 1.4rem;
-    border: 0.5rem solid #60007F;
-    background-color: #CC3314;
+    border: 0.5rem solid #008BA8;
+    background-color: #008BA8;
     padding-right: 10px;
+    padding-left: 10px;
+}
+
+button {
+    width: calc(100px - 1rem);
+    height: calc(6vh - 0.5rem);
+    border-radius: 1rem;
+    font-size: 24px;
+    color: #ffffff;
+    background-color: transparent;
+    font-weight: bold;
+    border-color: #004A59;
 }
