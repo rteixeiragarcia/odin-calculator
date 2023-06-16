@@ -34,43 +34,111 @@ function displayResult(result) {
     resultText.textContent = result;
 }
 
-function add(num1, num2) {
-    result = +(Number(num1) + Number(num2)).toFixed(2);
-        
+function add() {
+    switch(operator) {
+        case "+":
+            result = +(Number(numberString1) + Number(numberString2)).toFixed(2);
+            break;
+        case "-":
+            result = +(Number(numberString1) - Number(numberString2)).toFixed(2);
+            break;
+        case "*":
+            result = +(Number(numberString1) * Number(numberString2)).toFixed(2);
+            break;
+        case "/":
+            result = +(Number(numberString1) / Number(numberString2)).toFixed(2);
+            break;
+    }
+
     numberString1 = result.toString();
     numberString2 = "";
+
+    operator = "+";
+
+    console.log(`Num1: ${numberString1} NUm2: ${numberString2} Result: ${result}`);
 
     return result;
 }
 
-function sub(num1, num2) {
-    result = +(Number(num1) - Number(num2)).toFixed(2);
-        
+function sub() {
+    switch(operator) {
+        case "+":
+            result = +(Number(numberString1) + Number(numberString2)).toFixed(2);
+            break;
+        case "-":
+            result = +(Number(numberString1) - Number(numberString2)).toFixed(2);
+            break;
+        case "*":
+            result = +(Number(numberString1) * Number(numberString2)).toFixed(2);
+            break;
+        case "/":
+            result = +(Number(numberString1) / Number(numberString2)).toFixed(2);
+            break;
+    }
+
     numberString1 = result.toString();
     numberString2 = "";
+
+    operator = "-";
+
+    console.log(`Num1: ${numberString1} NUm2: ${numberString2} Result: ${result}`);
 
     return result;
 }
 
-function multi(num1, num2) {
-    result = +(Number(num1) * Number(num2)).toFixed(2);
-        
+function multi() {
+    switch(operator) {
+        case "+":
+            result = +(Number(numberString1) + Number(numberString2)).toFixed(2);
+            break;
+        case "-":
+            result = +(Number(numberString1) - Number(numberString2)).toFixed(2);
+            break;
+        case "*":
+            result = +(Number(numberString1) * Number(numberString2)).toFixed(2);
+            break;
+        case "/":
+            result = +(Number(numberString1) / Number(numberString2)).toFixed(2);
+            break;
+    }
+
     numberString1 = result.toString();
     numberString2 = "";
+
+    operator = "*";
+
+    console.log(`Num1: ${numberString1} NUm2: ${numberString2} Result: ${result}`);
 
     return result;
 }
 
-function div(num1, num2) {
-    result = +(Number(num1) / Number(num2)).toFixed(2);
-        
+function div() {
+    switch(operator) {
+        case "+":
+            result = +(Number(numberString1) + Number(numberString2)).toFixed(2);
+            break;
+        case "-":
+            result = +(Number(numberString1) - Number(numberString2)).toFixed(2);
+            break;
+        case "*":
+            result = +(Number(numberString1) * Number(numberString2)).toFixed(2);
+            break;
+        case "/":
+            result = +(Number(numberString1) / Number(numberString2)).toFixed(2);
+            break;
+    }
+
     numberString1 = result.toString();
     numberString2 = "";
+
+    operator = "/";
+
+    console.log(`Num1: ${numberString1} NUm2: ${numberString2} Result: ${result}`);
 
     return result;
 }
 
-function equal() {
+function total() {
     if (numberString2 === "") {
         switch(operator) {
             case "+":
@@ -106,32 +174,9 @@ function equal() {
     return result;
 }
 
-function operation() {
-    switch(operator) {
-        case "+":
-            add(numberString1, numberString2);
-            break;
-        case "-":
-            sub(numberString1, numberString2);
-            break;
-        case "*":
-            multi(numberString1, numberString2);
-            break;
-        case "/":
-            div(numberString1, numberString2);
-            break;
-    }
-
-    return result;
-}
-
 function updateNumber(value) {
     if (operator === "") return numberString1 += value;
     else return numberString2 += value;
-}
-
-function updateOperator(value) {
-    operator = value;
 }
 
 
@@ -175,3 +220,7 @@ eight.addEventListener("click", function () {
 nine.addEventListener("click", function () {
     updateNumber("9");
 });
+
+plus.addEventListener("click", add);
+
+minus.addEventListener("click", sub);
