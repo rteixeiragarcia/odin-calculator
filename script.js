@@ -35,3 +35,18 @@ function displayResult(result) {
     resultText.textContent = result;
 }
 
+function plus(num1, num2) {
+    return Number(num1) + Number(num2);
+}
+
+function minus(num1, num2) {
+    return Number(num1) - Number(num2);
+}
+
+function mult(num1, num2) {
+    return Number(num1) * Number(num2);
+}
+
+function duv(num1, num2) {
+    return Number(num1) / Number(num2);
+}
