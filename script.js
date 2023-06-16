@@ -48,6 +48,9 @@ function add() {
         case "/":
             result = +(Number(numberString1) / Number(numberString2)).toFixed(2);
             break;
+        case "":
+            result = numberString1;
+            break;
     }
 
     numberString1 = result.toString();
@@ -73,6 +76,9 @@ function sub() {
             break;
         case "/":
             result = +(Number(numberString1) / Number(numberString2)).toFixed(2);
+            break;
+        case "":
+            result = numberString1;
             break;
     }
 
@@ -100,6 +106,9 @@ function multi() {
         case "/":
             result = +(Number(numberString1) / Number(numberString2)).toFixed(2);
             break;
+        case "":
+            result = numberString1;
+            break;
     }
 
     numberString1 = result.toString();
@@ -125,6 +134,9 @@ function div() {
             break;
         case "/":
             result = +(Number(numberString1) / Number(numberString2)).toFixed(2);
+            break;
+        case "":
+            result = numberString1;
             break;
     }
 
@@ -175,6 +187,7 @@ function total() {
 }
 
 function updateNumber(value) {
+    console.log(`Num1: ${numberString1} NUm2: ${numberString2} Result: ${result}`);
     if (operator === "") return numberString1 += value;
     else return numberString2 += value;
 }
