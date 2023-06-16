@@ -34,6 +34,10 @@ function displayResult() {
     resultText.textContent = result;
 }
 
+function displayNumber(value) {
+    resultText.textContent = value;
+}
+
 function add() {
     switch(operator) {
         case "+":
@@ -197,7 +201,6 @@ function total() {
 }
 
 function updateNumber(value) {
-    console.log(`Num1: ${numberString1} NUm2: ${numberString2} Result: ${result}`);
     if (operator === "") return numberString1 += value;
     else return numberString2 += value;
 }
