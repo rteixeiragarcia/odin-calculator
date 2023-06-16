@@ -35,26 +35,37 @@ function displayResult(result) {
 function add(num1, num2) {
     let result = +(Number(num1) + Number(num2)).toFixed(2);
 
-    console.log(`Result of add: ${result}`);
-
     numberString1 = result.toString();
     numberString2 = "";
-
-    console.log(`Number String 1: ${numberString1}; Number String 2: ${numberString2}`);
 
     return result;
 }
 
 function sub(num1, num2) {
-    return +(Number(num1) - Number(num2)).toFixed(2);
+    let result = +(Number(num1) - Number(num2)).toFixed(2);
+
+    numberString1 = result.toString();
+    numberString2 = "";
+
+    return result;
 }
 
 function multi(num1, num2) {
-    return +(Number(num1) * Number(num2)).toFixed(2);
+    let result = +(Number(num1) * Number(num2)).toFixed(2);
+
+    numberString1 = result.toString();
+    numberString2 = "";
+
+    return result;
 }
 
 function div(num1, num2) {
-    return +(Number(num1) / Number(num2)).toFixed(2);
+    let result = +(Number(num1) / Number(num2)).toFixed(2);
+
+    numberString1 = result.toString();
+    numberString2 = "";
+
+    return result;
 }
 
 function updateNumber1(value) {
@@ -81,5 +92,3 @@ two.addEventListener("click", function () {
     if (operator === "") updateNumber1("2");
     else updateNumber2("2");
 });
-
-console.log(add("12", "3"));
