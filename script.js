@@ -38,3 +38,9 @@ open.addEventListener("click", function () {
     open.disabled = true;
     close.disabled = false;
 });
+
+close.addEventListener("click", function () {
+    storageOperation(")");
+    open.disabled = false;
+    close.disabled = true;
+});
