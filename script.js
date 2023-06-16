@@ -33,6 +33,10 @@ function storageOperation(value) {
     operation.push(value);
 }
 
+function eraseLast() {
+    operation.pop();
+}
+
 open.addEventListener("click", function () {
     storageOperation("(");
     open.disabled = true;
@@ -43,4 +47,13 @@ close.addEventListener("click", function () {
     storageOperation(")");
     open.disabled = false;
     close.disabled = true;
+});
+
+divide.addEventListener("click", function () {    
+    if (operation[operation.length-1] === "/" || operation[operation.length-1] === "*" || operation[operation.length-1] === "+" || operation[operation.length-1] === "-") {
+        eraseLast();
+        storageOperation("/");
+    }
+
+    storageOperation("/");
 });
