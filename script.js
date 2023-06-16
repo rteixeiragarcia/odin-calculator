@@ -34,8 +34,9 @@ function displayResult() {
     resultText.textContent = result;
 }
 
-function displayNumber(value) {
-    resultText.textContent = value;
+function displayNumber() {
+    if (numberString2 === "") resultText.textContent = numberString1;
+    else resultText.textContent = numberString2;
 }
 
 function add() {
@@ -57,6 +58,8 @@ function add() {
             break;
     }
 
+    resultText.textContent = operator;
+
     numberString1 = result.toString();
     numberString2 = "";
 
@@ -64,7 +67,7 @@ function add() {
 
     displayResult()
 
-    console.log(`Num1: ${numberString1} NUm2: ${numberString2} Result: ${result}`);
+    console.log(`Num1: ${numberString1} NUm2: ${numberString2} Result: ${result} Operator: ${operator}`);
 
     return result;
 }
@@ -88,6 +91,8 @@ function sub() {
             break;
     }
 
+    resultText.textContent = operator;
+
     numberString1 = result.toString();
     numberString2 = "";
 
@@ -95,7 +100,7 @@ function sub() {
 
     displayResult()
 
-    console.log(`Num1: ${numberString1} NUm2: ${numberString2} Result: ${result}`);
+    console.log(`Num1: ${numberString1} NUm2: ${numberString2} Result: ${result} Operator: ${operator}`);
 
     return result;
 }
@@ -119,6 +124,8 @@ function multi() {
             break;
     }
 
+    resultText.textContent = operator;
+
     numberString1 = result.toString();
     numberString2 = "";
 
@@ -126,7 +133,7 @@ function multi() {
 
     displayResult()
 
-    console.log(`Num1: ${numberString1} NUm2: ${numberString2} Result: ${result}`);
+    console.log(`Num1: ${numberString1} NUm2: ${numberString2} Result: ${result} Operator: ${operator}`);
 
     return result;
 }
@@ -150,6 +157,8 @@ function div() {
             break;
     }
 
+    resultText.textContent = operator;
+
     numberString1 = result.toString();
     numberString2 = "";
 
@@ -157,7 +166,7 @@ function div() {
 
     displayResult()
 
-    console.log(`Num1: ${numberString1} NUm2: ${numberString2} Result: ${result}`);
+    console.log(`Num1: ${numberString1} NUm2: ${numberString2} Result: ${result} Operator: ${operator}`);
 
     return result;
 }
@@ -207,42 +216,52 @@ function updateNumber(value) {
 
 zero.addEventListener("click", function () {
     updateNumber("0");
+    displayNumber("0");
 });
 
 one.addEventListener("click", function () {
     updateNumber("1");
+    displayNumber("1");
 });
 
 two.addEventListener("click", function () {
     updateNumber("2");
+    displayNumber("2");
 });
 
 three.addEventListener("click", function () {
     updateNumber("3");
+    displayNumber("3");
 });
 
 four.addEventListener("click", function () {
     updateNumber("4");
+    displayNumber("4");
 });
 
 five.addEventListener("click", function () {
     updateNumber("5");
+    displayNumber("5");
 });
 
 six.addEventListener("click", function () {
     updateNumber("6");
+    displayNumber("6");
 });
 
 seven.addEventListener("click", function () {
     updateNumber("7");
+    displayNumber("7");
 });
 
 eight.addEventListener("click", function () {
     updateNumber("8");
+    displayNumber("8");
 });
 
 nine.addEventListener("click", function () {
     updateNumber("9");
+    displayNumber("9");
 });
 
 plus.addEventListener("click", add);
@@ -254,3 +273,8 @@ multiply.addEventListener("click", multi);
 divide.addEventListener("click", div);
 
 equal.addEventListener("click", total);
+
+dot.addEventListener("click", function () {
+    updateNumber(".");
+    displayNumber(".");
+});
