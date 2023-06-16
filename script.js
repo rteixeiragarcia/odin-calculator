@@ -30,7 +30,7 @@ let operator = "";
 
 let result = 0;
 
-function displayResult(result) {
+function displayResult() {
     resultText.textContent = result;
 }
 
@@ -57,6 +57,8 @@ function add() {
     numberString2 = "";
 
     operator = "+";
+
+    displayResult()
 
     console.log(`Num1: ${numberString1} NUm2: ${numberString2} Result: ${result}`);
 
@@ -87,6 +89,8 @@ function sub() {
 
     operator = "-";
 
+    displayResult()
+
     console.log(`Num1: ${numberString1} NUm2: ${numberString2} Result: ${result}`);
 
     return result;
@@ -116,6 +120,8 @@ function multi() {
 
     operator = "*";
 
+    displayResult()
+
     console.log(`Num1: ${numberString1} NUm2: ${numberString2} Result: ${result}`);
 
     return result;
@@ -144,6 +150,8 @@ function div() {
     numberString2 = "";
 
     operator = "/";
+
+    displayResult()
 
     console.log(`Num1: ${numberString1} NUm2: ${numberString2} Result: ${result}`);
 
@@ -182,6 +190,8 @@ function total() {
                 break;
         }
     }
+
+    displayResult()
 
     return result;
 }
