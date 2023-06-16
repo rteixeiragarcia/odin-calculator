@@ -4,10 +4,6 @@
     padding: 0;
 }
 
-body {
-    background-color: #12B371;
-}
-
 #header {
     display: flex;
     height: 20vh;
@@ -16,28 +12,19 @@ body {
 }
 
 #title {
-    border: 0.2rem solid #8700B3;
+    border: 0.5rem solid #8700B3;
     padding: 0.4em;
     border-radius: 2rem;
     font-size: 48px;
     font-family: 'Rajdhani', sans-serif;
     color: #8700B3;
-    text-shadow:
-    0 0 7px #ffffff,
-    0 0 10px #ffffff,
-    0 0 21px #ffffff,
-    0 0 42px #ffffff,
-    0 0 82px #ffffff,
-    0 0 92px #ffffff,
-    0 0 102px #ffffff,
-    0 0 151px #ffffff;
     box-shadow: 
-    0 0 .2rem #ffffff,
-    0 0 .2rem #ffffff,
-    0 0 2rem #ffffff,
-    0 0 0.8rem #ffffff,
-    0 0 2.8rem #ffffff,
-    inset 0 0 1.3rem #ffffff;
+    0 0 .2rem #8700B3,
+    0 0 .2rem #8700B3,
+    0 0 2rem #8700B3,
+    0 0 0.8rem #8700B3,
+    0 0 2.8rem #8700B3,
+    inset 0 0 1.3rem #8700B3;
 }
 
 #main {
@@ -56,10 +43,21 @@ body {
     border: 0.5rem solid #60007F;
     border-radius: 2rem;
     box-shadow: 
-    0 0 .2rem #ffffff,
-    0 0 .2rem #ffffff,
-    0 0 2rem #ffffff,
-    0 0 0.8rem #ffffff,
-    0 0 2.8rem #ffffff,
-    inset 0 0 1.3rem #ffffff;
+    0 0 .2rem #60007F,
+    0 0 .2rem #60007F,
+    0 0 2rem #60007F,
+    0 0 0.8rem #60007F,
+    0 0 2.8rem #60007F,
+    inset 0 0 1.3rem #60007F;
+}
+
+#display {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 30vh;
+    border-radius: 1.4rem;
+    border: 0.5rem solid #60007F;
+    background-color: #BF0A5D;
 }
