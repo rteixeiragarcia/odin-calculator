@@ -35,8 +35,8 @@ function displayResult() {
 }
 
 function displayNumber() {
-    if (numberString2 === "") return line1Text.textContent += numberString1;
-    else return line1Text.textContent += numberString2;
+    if (numberString2 === "") return line1Text.textContent = numberString1;
+    else return line1Text.textContent = numberString2;
 }
 
 function displayOperator() {
@@ -53,33 +53,36 @@ function erase() {
     numberString2 = "";
     operator = "";
     result = 0;
+    line1Text.textContent = "";
 }
 
 function add() {
-    switch(operator) {
-        case "+":
-            result = +(Number(numberString1) + Number(numberString2)).toFixed(2);
-            break;
-        case "-":
-            result = +(Number(numberString1) - Number(numberString2)).toFixed(2);
-            break;
-        case "*":
-            result = +(Number(numberString1) * Number(numberString2)).toFixed(2);
-            break;
-        case "/":
-            result = +(Number(numberString1) / Number(numberString2)).toFixed(2);
-            break;
-        case "":
-            result = numberString1;
-            break;
+    if (numberString2 === "") {
+        operator = "+";
+    } else {
+        switch(operator) {
+            case "+":
+                result = +(Number(numberString1) + Number(numberString2)).toFixed(2);
+                break;
+            case "-":
+                result = +(Number(numberString1) - Number(numberString2)).toFixed(2);
+                break;
+            case "*":
+                result = +(Number(numberString1) * Number(numberString2)).toFixed(2);
+                break;
+            case "/":
+                result = +(Number(numberString1) / Number(numberString2)).toFixed(2);
+                break;
+            case "":
+                result = numberString1;
+                break;
+        }
+
+        numberString1 = result.toString();
+        numberString2 = "";
+
+        operator = "+";
     }
-
-    resultText.textContent = operator;
-
-    numberString1 = result.toString();
-    numberString2 = "";
-
-    operator = "+";
 
     console.log(`Num1: ${numberString1} NUm2: ${numberString2} Result: ${result} Operator: ${operator}`);
 
@@ -87,30 +90,32 @@ function add() {
 }
 
 function sub() {
-    switch(operator) {
-        case "+":
-            result = +(Number(numberString1) + Number(numberString2)).toFixed(2);
-            break;
-        case "-":
-            result = +(Number(numberString1) - Number(numberString2)).toFixed(2);
-            break;
-        case "*":
-            result = +(Number(numberString1) * Number(numberString2)).toFixed(2);
-            break;
-        case "/":
-            result = +(Number(numberString1) / Number(numberString2)).toFixed(2);
-            break;
-        case "":
-            result = numberString1;
-            break;
+    if (numberString2 === "") {
+        operator = "-";
+    } else {
+        switch(operator) {
+            case "+":
+                result = +(Number(numberString1) + Number(numberString2)).toFixed(2);
+                break;
+            case "-":
+                result = +(Number(numberString1) - Number(numberString2)).toFixed(2);
+                break;
+            case "*":
+                result = +(Number(numberString1) * Number(numberString2)).toFixed(2);
+                break;
+            case "/":
+                result = +(Number(numberString1) / Number(numberString2)).toFixed(2);
+                break;
+            case "":
+                result = numberString1;
+                break;
+        }
+
+        numberString1 = result.toString();
+        numberString2 = "";
+
+        operator = "-";
     }
-
-    resultText.textContent = operator;
-
-    numberString1 = result.toString();
-    numberString2 = "";
-
-    operator = "-";
 
     console.log(`Num1: ${numberString1} NUm2: ${numberString2} Result: ${result} Operator: ${operator}`);
 
@@ -118,30 +123,32 @@ function sub() {
 }
 
 function multi() {
+    if (numberString2 === "") {
+        operator = "*";
+    } else {
     switch(operator) {
-        case "+":
-            result = +(Number(numberString1) + Number(numberString2)).toFixed(2);
-            break;
-        case "-":
-            result = +(Number(numberString1) - Number(numberString2)).toFixed(2);
-            break;
-        case "*":
-            result = +(Number(numberString1) * Number(numberString2)).toFixed(2);
-            break;
-        case "/":
-            result = +(Number(numberString1) / Number(numberString2)).toFixed(2);
-            break;
-        case "":
-            result = numberString1;
-            break;
+            case "+":
+                result = +(Number(numberString1) + Number(numberString2)).toFixed(2);
+                break;
+            case "-":
+                result = +(Number(numberString1) - Number(numberString2)).toFixed(2);
+                break;
+            case "*":
+                result = +(Number(numberString1) * Number(numberString2)).toFixed(2);
+                break;
+            case "/":
+                result = +(Number(numberString1) / Number(numberString2)).toFixed(2);
+                break;
+            case "":
+                result = numberString1;
+                break;
+        }
+
+        numberString1 = result.toString();
+        numberString2 = "";
+
+        operator = "*";
     }
-
-    resultText.textContent = operator;
-
-    numberString1 = result.toString();
-    numberString2 = "";
-
-    operator = "*";
 
     console.log(`Num1: ${numberString1} NUm2: ${numberString2} Result: ${result} Operator: ${operator}`);
 
@@ -149,30 +156,32 @@ function multi() {
 }
 
 function div() {
-    switch(operator) {
-        case "+":
-            result = +(Number(numberString1) + Number(numberString2)).toFixed(2);
-            break;
-        case "-":
-            result = +(Number(numberString1) - Number(numberString2)).toFixed(2);
-            break;
-        case "*":
-            result = +(Number(numberString1) * Number(numberString2)).toFixed(2);
-            break;
-        case "/":
-            result = +(Number(numberString1) / Number(numberString2)).toFixed(2);
-            break;
-        case "":
-            result = numberString1;
-            break;
+    if (numberString2 === "") {
+        operator = "/";
+    } else {
+        switch(operator) {
+            case "+":
+                result = +(Number(numberString1) + Number(numberString2)).toFixed(2);
+                break;
+            case "-":
+                result = +(Number(numberString1) - Number(numberString2)).toFixed(2);
+                break;
+            case "*":
+                result = +(Number(numberString1) * Number(numberString2)).toFixed(2);
+                break;
+            case "/":
+                result = +(Number(numberString1) / Number(numberString2)).toFixed(2);
+                break;
+            case "":
+                result = numberString1;
+                break;
+        }
+
+        numberString1 = result.toString();
+        numberString2 = "";
+
+        operator = "/";
     }
-
-    resultText.textContent = operator;
-
-    numberString1 = result.toString();
-    numberString2 = "";
-
-    operator = "/";
 
     console.log(`Num1: ${numberString1} NUm2: ${numberString2} Result: ${result} Operator: ${operator}`);
 
@@ -212,57 +221,59 @@ function total() {
         }
     }
 
+    operator = "=";
+
     return result;
 }
 
 zero.addEventListener("click", function () {
     updateNumber("0");
-    displayNumber("0");
+    displayNumber();
 });
 
 one.addEventListener("click", function () {
     updateNumber("1");
-    displayNumber("1");
+    displayNumber();
 });
 
 two.addEventListener("click", function () {
     updateNumber("2");
-    displayNumber("2");
+    displayNumber();
 });
 
 three.addEventListener("click", function () {
     updateNumber("3");
-    displayNumber("3");
+    displayNumber();
 });
 
 four.addEventListener("click", function () {
     updateNumber("4");
-    displayNumber("4");
+    displayNumber();
 });
 
 five.addEventListener("click", function () {
     updateNumber("5");
-    displayNumber("5");
+    displayNumber();
 });
 
 six.addEventListener("click", function () {
     updateNumber("6");
-    displayNumber("6");
+    displayNumber();
 });
 
 seven.addEventListener("click", function () {
     updateNumber("7");
-    displayNumber("7");
+    displayNumber();
 });
 
 eight.addEventListener("click", function () {
     updateNumber("8");
-    displayNumber("8");
+    displayNumber();
 });
 
 nine.addEventListener("click", function () {
     updateNumber("9");
-    displayNumber("9");
+    displayNumber();
 });
 
 plus.addEventListener("click", function () {
@@ -291,11 +302,12 @@ divide.addEventListener("click", function () {
 
 dot.addEventListener("click", function () {
     updateNumber(".");
-    displayNumber(".");
+    displayNumber();
 });
 
 equal.addEventListener("click", function () {
     total();
+    displayOperator();
     displayResult();
 });
 
