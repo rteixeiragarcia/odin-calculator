@@ -10,7 +10,7 @@ const multiply = document.getElementById("multiply");
 const minus = document.getElementById("minus");
 const plus = document.getElementById("plus");
 const dot = document.getElementById("dot");
-const percentage = document.getElementById("percentage");
+const backSpace = document.getElementById("erase");
 const equal = document.getElementById("equal");
 const zero = document.getElementById("zero");
 const one = document.getElementById("one");
@@ -62,6 +62,16 @@ function erase() {
     operator = "";
     result = 0;
     line1Text.textContent = "";
+}
+
+function removeNumber() {
+    if (numberString2 === "") {
+        numberString1 = numberString1.slice(0, -1);
+    } else {
+        numberString2 = numberString2.slice(0, -1);
+    }
+
+    console.log(`Num1: ${numberString1} NUm2: ${numberString2} Result: ${result} Operator: ${operator}`);
 }
 
 function add() {
@@ -328,4 +338,9 @@ equal.addEventListener("click", function () {
 clear.addEventListener("click", function () {
     erase();
     displayResult();
+});
+
+backSpace.addEventListener("click", function () {
+    removeNumber();
+    displayNumber();
 });
