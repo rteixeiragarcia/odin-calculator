@@ -43,6 +43,14 @@ function displayOperator() {
     return line1Text.textContent += operator;
 }
 
+function disableDot() {
+    return dot.disabled = true;
+}
+
+function enableDot() {
+    return dot.disabled = false;
+}
+
 function updateNumber(value) {
     if (operator === "") return numberString1 += value;
     else return numberString2 += value;
@@ -280,35 +288,41 @@ plus.addEventListener("click", function () {
     add();
     displayOperator();
     displayResult();
+    enableDot();
 });
 
 minus.addEventListener("click", function () {
     sub();
     displayOperator();
     displayResult();
+    enableDot();
 });
 
 multiply.addEventListener("click", function () {
     multi();
     displayOperator();
     displayResult();
+    enableDot();
 });
 
 divide.addEventListener("click", function () {
     div();
     displayOperator();
     displayResult();
+    enableDot();
 });
 
 dot.addEventListener("click", function () {
     updateNumber(".");
     displayNumber();
+    disableDot();
 });
 
 equal.addEventListener("click", function () {
     total();
     displayOperator();
     displayResult();
+    enableDot();
 });
 
 clear.addEventListener("click", function () {
