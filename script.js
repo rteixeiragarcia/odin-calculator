@@ -74,6 +74,8 @@ function add() {
             break;
     }
 
+    resultText.textContent = operator;
+
     numberString1 = result.toString();
     numberString2 = "";
 
@@ -102,6 +104,8 @@ function sub() {
             result = numberString1;
             break;
     }
+
+    resultText.textContent = operator;
 
     numberString1 = result.toString();
     numberString2 = "";
@@ -132,6 +136,8 @@ function multi() {
             break;
     }
 
+    resultText.textContent = operator;
+
     numberString1 = result.toString();
     numberString2 = "";
 
@@ -160,6 +166,8 @@ function div() {
             result = numberString1;
             break;
     }
+
+    resultText.textContent = operator;
 
     numberString1 = result.toString();
     numberString2 = "";
